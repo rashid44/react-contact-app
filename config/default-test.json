@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://harun:<password>@contactmanager-i04kr.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://harun:<password>@contactmanager-i04kr.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
 }
