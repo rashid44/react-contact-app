@@ -11,6 +11,10 @@ const ContactItem = ({ contact }) => {
         contactContext.deleteContact(id);
     }
 
+    const onEdit = () => {
+        contactContext.setCurrent(contact);
+    }
+
     return (
         <div className="card bg-light">
             <h3 className="text-primary text-left">
@@ -35,7 +39,7 @@ const ContactItem = ({ contact }) => {
             </ul>
 
             <p>
-                <button className="btn btn-dark btn-sm">Edit</button>
+                <button className="btn btn-dark btn-sm" onClick={onEdit}>Edit</button>
                 <button className="btn btn-danger btn-sm" onClick={onDelete}>Delete</button>
             </p>
         </div>
